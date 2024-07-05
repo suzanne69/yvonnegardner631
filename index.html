@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="p:domain_verify" content="7b5f53419fc71578810c18abfefd4565"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .breadcrumb {
+            font-size: 15px;
+            margin: 20px;
+        }
+        .breadcrumb a {
+            color: black;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .gradient-block {
+            max-width: 4000px;
+            margin: 0 auto;
+            background-color: #d1dfdd; /* warna latar belakang block */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          	font-family: Calibri, sans-serif;
+        }
+      
+        .gradient-block h1 {
+            margin: 0;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .buttons .btn {
+            background-color: white;
+            border: 1px solid #d7dade;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .buttons .btn:hover, .buttons .btn:active {
+            background-color: #f2f3f5;
+        }
+      
+      	.tombol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+      
+      	.tombol .btn {
+            background-color: #e1e6fc;
+            border: 1px solid #d7dade;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tombol .btn:hover, .buttons .btn:active {
+            background-color: #f2f3f5;
+        }
+      	
+        .collection-text {
+            text-align: center;
+            font-size: 15px;
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            margin: 20px;
+        }
+      	
+      	@media (max-width: 1080px) {
+            .gallery {
+                justify-content: flex-start;
+            }
+            .gallery .image-container {
+                width: calc(50% - 5px);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .gallery .image-container {
+                width: calc(20% - 5px);
+            }
+        }
+      	
+        .gallery .image-container {
+            position: relative;
+        }
+        .gallery img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            max-width: 360px;
+        }
+        .gallery img:hover {
+            box-shadow: 0 -50% 20% black;
+            opacity: 0.8;
+        }
+        .image-container .title {
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0 5px;
+        }
+        .image-container .caption {
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: black;
+        }
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+        .other-graphics {
+            text-align: center;
+            margin: 40px 20px;
+        }
+        .other-graphics h1 {
+            margin-bottom: 20px;
+        }
+        .scrollable-buttons {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        .scrollable-buttons .btn {
+            background-color: white;
+            border: 1px solid #d7dade;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+        .scrollable-buttons .btn:hover, .scrollable-buttons .btn:active {
+            background-color: #f2f3f5;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-top: 1px solid #d7dade;
+        }
+        .footer .btn {
+            background-color: white;
+            border: 1px solid #d7dade;
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .footer .btn:hover, .footer .btn:active {
+            background-color: #f2f3f5;
+        }
+        .footer-text {
+            color: #d7dade;
+            text-align: center;
+        }
+        .footer-icons {
+            display: flex;
+            gap: 5px;
+        }
+        .footer-icons img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .download {
+            width: 40%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4874111,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4874111&101" alt="" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+
+    <div class="breadcrumb"><br>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">Home</a> > <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">Our Collection</a>
+    </div>
+
+    <div class="gradient-block">
+        <h1>Pinterest pin templates</h1>
+        <p>Stand out on Pinterest with these customizable Pin designs.</p>
+      <p>Easy to personalize, hard to ignore!</p>
+    </div>
+  
+    <center>
+    <script type="text/javascript">
+    atOptions = {
+    'key' : '71d081485a0e0f88ae40a3394fc49fbc',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+    };
+    </script>
+    <script type="text/javascript" src="//orbmatchingenough.com/71d081485a0e0f88ae40a3394fc49fbc/invoke.js"></script></center>
+
+    <div class="buttons">
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Wedding</div>
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Birthday</div>
+    </div>
+
+    <div class="scrollable-buttons">
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Filters</div>
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Style↓</div>
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Theme↓</div>
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Color↓</div>
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Feature↓</div>
+    </div>
+
+    <div class="collection-text">
+        3,269 collections
+    </div>
+  
+  	<div class="tombol">
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'"><b>Download</b></div>
+    </div>
+
+    <center><script type="text/javascript">
+    atOptions = {
+    'key' : 'da1687ee72a8401331b336af5668cf1e',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+    };
+    </script>
+    <script type="text/javascript" src="//orbmatchingenough.com/da1687ee72a8401331b336af5668cf1e/invoke.js"></script></center>
+
+    <div class="gallery">
+        <div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvI4ju8vlvmxxcAq4pkRpetpty0QY-irmnQW-j2LF4U3CSeZYOSLnwzyMwxzmt-iTZwWuG6PXabMmYO70Z9PBQz0NZGw2aGoKb5FvG4Smj0vruiZB75NHRaT9lZy1vUYCtVMw7gb2j5Gzc9UsGslRgsEblsWyiG8oZ50SgYha8DP4QE7j1Z8RCcOFNEh8/s518/image_273.webp" alt="Collection Image">
+            </a>
+            <div class="title">Minimalist Handmade Candle</div>
+        </div>
+        <div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVV4-jF6ADvRsVZYQIPyncc7Ox1K0IsGUAhtH3XrJOmsPm-zfMtfSpWWlnBLrj2tf7daDSq7-XXDr3LuCdGPAO2vBS0hYO0cXNOsPpIEcLYKKl3qGzTB5alfRdwGziT0ZSBtNnyUbBHAY5NafB3hJ33LHahk6cfD3hLbhJ4mWKBcNMGvfuAKGKO1_h5-Q/s619/image_274.webp" alt="Collection Image">
+            </a>
+            <div class="title">Stylish Product Launch</div>
+        </div>
+        <div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2Dm1XR7NdiFo_kdR9ayIinbzZc4C2fmCtH6hcFL43Fx6c__bdUf1uKO4uLsD5SjTtbc68wfj92Ho40vY9xyAjyB5LQvZO_TniCrFXoqgsuZbLTD2vUxV5yvWUuRLHgUvY1rM6nGvxKLi0QqufomoLVJoZHEPEgSaOY9i7qId8pH03n2vc5F4XPkyPweM/s512/image_273%20(1).webp" alt="Collection Image">
+            </a>
+            <div class="title">Aesthetic MoodBoard</div>
+        </div>
+        <div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgRLWN-QCtiQjztYaEqDmiyt3AOB1mLSsr-Klwby3amojKJMB5-1X1t1_4UcllhMOmhHjC1seViop-XDh__KmghEIWB9jra1wgeviyCfZzZTyrrFVb2aJX9dfsT1vr9ULFe82nDJPNKjX5Jk8hwW-IfjZjenJpYfzpWjHh3V0MNsxA6L-GYZAP4G8lRZ0/s538/image.webp" alt="Collection Image">
+            </a>
+            <div class="title">Fashion Lifestyle Newspaper</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-5EJ_4L7MoC-pP-vCNqVkdx26vo_EhBoAAxXbPpbVBgMzzB4komNHj755PzGlnJ6ESIh5RNMNR5nsNEYfXmw3YYJtj6Tihhmg5E0s8yBwNqCJFih5Jrpufmd1nZcdlPwRILAjUl9IsrkV8ZqZHLmq8_PXLCOPLV7Kt_Wo2rdhtCC8hzhPSrLtblm8L6U/s537/image%20(1).webp" alt="Collection Image">
+            </a>
+            <div class="title">White Elegant Business Tips</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOzBBXrnzv5W5cD-IuVQ1pzvxPj3wxwTvjEvMTwDv7rxhRBy9uS4MfF2H24AL9dylpP78PrAkID2kZ-6qSEyRz2QPjDgZQTfzvJWvvtGZi1oiKg6G7IjKR9LTR2LOgbyY_1l90W2_VhjMs6anoQHIvFA_UiVLnZH7vSzFIvQGqqXUmbO_TTC8pqshxkkc/s541/image%20(2).webp" alt="Collection Image">
+            </a>
+            <div class="title">Save More Time</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDnvQ1-p8FRcBmurvNNlspJoqgd-149sxATGzijn_5RAJMUBfUI86yNh5dP4sbNCqJkN70G5XAiW3Th2bskcSeSKIL3aM4_KOGiwTmZMukmZCgqDqHD3JGorXRC_9v_oKgvMGOlWfJenoj6o7ImPiRjsvhyphenhyphen1yfL_M39XUVr2SusqqqtqOVO59QeuUxFL8/s532/image%20(3).webp" alt="Collection Image">
+            </a>
+            <div class="title">New Post Announcement</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrsEK8KVOamwXH3PIE7Ysam_zE2LN86qWUEly-jnxjaioUI0gwrS8ny9CoEeUXqg2Tq_zQ69NyF-zVIbj2cvEBkZTUZQiUOtC8QQ3KiTgWLsZJgTWANiHhexdJ-Ad0OXP2AySV39AyJwvkNesXeyPAfSp9glrKF9oO8PdmYrFqCW6yhy0qTi746SQRjRU/s541/image%20(4).webp" alt="Collection Image">
+            </a>
+            <div class="title">Travel Influencer</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpHna4xK3dCMMZ6Lm4H0h9kuaVFTzZYW410rK4VodYq25cAJqQVjQlqyPM15dnpNq8lSr6LTwPK1m0UZMFfXHv9GyIecJgCgLManBpXC8Aqvpqj5unWfC-QawUZQuTjiiYpqSH8lIbfHpLOWlP0qrDUB-FKu3TclgA5xAWFPz6tWoTIKWiJSLALrYn9tc/s546/image%20(5).webp" alt="Collection Image">
+            </a>
+            <div class="title">Collage Summer Moments Pool</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjc0lccv8PCpxiivTrUN8zv_YXzG3Z8gcRAOXIQMtzmFuBQczeo3rHmLR3S90b4Rw9MbezcgSVaADqxZ2EMGDAuyXUkLCrPByckyiC3LLQSEubFbQMvt5pUDmjoN0QdFgWNYLsLMB9x8emP6BN3OU4ii0Ml-VOC9HbXXHt0qgmX1yfkH5LH1-Jca_G6-g/s544/image%20(6).webp" alt="Collection Image">
+            </a>
+            <div class="title">Digital Products Blog</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxr-HIHyCQuB0az7E2K7JL49vK9ixJ-yFnsqjWhi7gD9xLukb8Go1harCW2D5Ib_el8SXTERKqQdfPCLwkNLtEfXUXDvBWeHAEgPxSDqQHYt-szMLWCDupV8BpHz74OC1mNfl78hatwnPT4LMtIta_MMeQIbyrCUkf-Yjbc4yeoXQAaEDzbYWjsa1M4a4/s549/image%20(7).webp" alt="Collection Image">
+            </a>
+            <div class="title">Green White Minimalistic</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEmN-YdEAy8cHLk540OXOXnZW8WFdx3SL43to-8Xf40YMqz_52gedmx0oe8VIW4khed4bLUrqFP_btgidpemWv51dYO3le2LkFvuCg5ZXm6TyCWZmLMZQwEu3zKAamtninjaSnzaLIlZVmPaIEVM9fVGa8Nm2LB3vyFvl4XHWOI_Y2ADyXkcYAHtTrdAY/s540/image%20(8).webp" alt="Collection Image">
+            </a>
+            <div class="title">Nude Feminine Elegant Moodboard</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVsEZA9ekREQ4D6pR2P7ZGfuH02xcNMEKjwSDEetWEKk5oUK9cStfAZjKlwA7vc8yGEYr4713XcyLs4E-p5xNmR9EazkL3w2RUySeB6l-ncoxkXcFKINiwj3nf9tupJK_ZSwA2aWRrCgyhXtG2T956f5fkhdE6IVquXK2sGsv1vRVBOOMGccSuqFy5OJU/s540/image%20(9).webp" alt="Collection Image">
+            </a>
+            <div class="title">White Black Modern</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBbJQb4xlEe4XoAjJztsDpCwC25CDAdXm2u1xRNmWoir-sVy5nVUM7hUtj5Gx23_I-ASV-TncOjK5zufnN-HwP19l5ba6YV0X2rdTyU3Pn2U6rJWNrZ8ferfNERjvHD3rkCihd_58w8HRL18wb1K3UeIXyv_E54AAjQpeEkc_szaPdzNfP1q28HaO4Pj0/s540/image%20(10).webp" alt="Collection Image">
+            </a>
+            <div class="title">Healthy Options</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGB-F8HQZU-UEjaM3a80AOIxvn03nccaUJywFl7kR_LE87odatiapgjsNDFAgSvYepPaDMqgH4KPE22PP4nqqP_s2UETz3JLn-tZGRKj6tK_-ssECCNC-l5g39v67FE-AuprX8Vl8edAvA98sZ_5y-DpMZj0LNEal-fNbO4nHgCq2-lGgOker4FmNtYW8/s541/image%20(11).webp" alt="Collection Image">
+            </a>
+            <div class="title">Cream Brown Minimal Ebook</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZrQkCr6R4lvZXPccEUtxjTu4b2x-tnLIOS9SMuU0j38Rp-nN9I21azRca9pM3Y7erc3m0ScaY95lZhuCsZDp-OfT0Je4VPRamW_fiPwjnsNWbZBHLGu6FjAkkWSddt3i80JHsWRHaYZJ_mLkMpADpW0D6K9mvMncMx_VIfXuIy168vMNmbeC0X5tfvEY/s544/image%20(12).webp" alt="Collection Image">
+            </a>
+            <div class="title">Neutral Minimalist Aesthetic</div>
+        </div>
+      	<div class="image-container">
+            <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKxgJJwNWudDu96lJhyphenhyphenYHZzKFrUx293aeTGXKR9BEzhlArzTeTgbaZ4QWE4P3rZ6SM5fF6101v1IcWwbpICJXmxEY65UfLdNgyjSie8J2bg0JTqAlcVmg2TEWoP5HQ0_7YXNsYlSDHq0P1SFK2Dd8YNatOEoKKQrqOv2MgEm3N9orXBhVScrP40ahaMSQ/s545/image%20(13).webp" alt="Collection Image">
+            </a>
+            <div class="title">Cream Pasta Recipe</div>
+        </div>
+      
+      
+      
+      
+    </div>
+  		
+  	
+
+    <div class="pagination">
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">←</a>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">1</a>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">2</a>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">3</a>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">...</a>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">last</a>
+        <a href="https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673" target="_blank">→</a>
+    </div>
+
+    <div class="other-graphics">
+        <h1>Other Social Graphic</h1>
+        <div class="scrollable-buttons">
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Facebook Posts</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">YouTube Thumbnails</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Facebook Ads Thumbnail</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Tumblr Images</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Etsy Shop Icons</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Facebook Shops Covers</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Pinterest Template</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">LinkedIn Image Ads</div>
+            <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">Pinterest Ideas</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="btn" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'">
+             English
+        </div>
+        <div class="footer-text">            
+        </div>
+        <div class="footer-icons">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinDSOs-Ua2kYRSS-RsiDbgg7qLqrpeU6ksl52HRrJRdvNUQHVYEOAaKFU8rtPTmWH-Udm86xNK7GwjCV6oCUPMWpdHHWbVrt4zBut22pmeRcEa6fhZyADxuJC1ECfzmNzJSS0xCwisWHWmmZ6D8BIB8MMkU4Dcjf7ah5D3V0QWVW3CE9MKESpq0GhImcw/s179/facebook.webp" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'" alt="Icon 1">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrj4W2Ug9-0-qF8krgoAeEZ0nnybFHfh5V-79eiP00jF_OcxFDhLU-BpaLACot50R-_abzBcj5krIhmf80kglWGlxzs0qxm8jIA9lPYOmgMZLPSOOVz9Mou2OdzYJEMhFlRmPXFxR72dx7HRuUWh-23_V7ghSmzOuBhE2b-mUsJvij0ZyjhOtTC0zo3tI/s179/IG.webp" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'" alt="Icon 2">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjynwWVNaoAktsL_Xqfluwr9D8Cn72x71ocV5DmecJsoXGtfCjjDxVoK5CvaFuJa-TJ5T27mSvnoMHoGDuAeICZqnDStz6U6HLzVIArAUnlHyD_2BQc6mv3IXCPKvIXWmmIMV4PZ3ZxAtD3AGMaDiKrS6JVa6zQidXv6X1Bl5kJOWWeQwUxt_JAN0HsbwA/s179/Pin.webp" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'" alt="Icon 3">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXDRvTbXhRm6_nvVQ2z14Y8cCphM3KSPPbxaTMAnHB3J4gR7WhMfhopG9vMhBRMfdBXneBexA1N-Co-Lf1AT8YmGjhAQWQyTmVOH1CO9CqmxImuEup0pIo8MFVNhsIZ1eHBPD75sCQNETwDxzSgUj9DN62-39MtYOyUz2KGPywrWFeUBYTJ_Wnoc55Tnw/s179/tik.webp" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'" alt="Icon 4">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB-fFV1r5QSZ5rCQ81HAif5BHpccaUmZpxfkiEcU24fqgbHXAF5V2yJEeaxROq7J_U9J053jzsm0e9O3WpvT_2XIeQ04N9B5_3zzWxTC6i8ey9Y7oEfPS88gyHFo9tZgh6j7qyupbGInURPkB2c7WzZUXG3-YjpwNCn-0JJK608OoPdQjcFS9PxrIng2M/s179/x.webp" onclick="window.location.href='https://orbmatchingenough.com/ftnmj1dm?key=6f25ae20cac611f281b0b91bceb5b673'" alt="Icon 5">
+        </div>
+    </div>
+
+</body>
+</html>
